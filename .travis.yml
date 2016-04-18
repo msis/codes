@@ -10,6 +10,7 @@ before_script:
   - git clone https://gist.github.com/b73112ba396df4b6f1c0a9ac6c122ce5.git gist-deploy
   - cd $TRAVIS_BUILD_DIR
   - hugo version
+  - git clone --depth 1 --recursive https://github.com/spf13/hugoThemes.git themes
 
 script:
   - hugo
