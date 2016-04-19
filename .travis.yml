@@ -6,7 +6,6 @@ go:
 install: go get -v github.com/spf13/hugo
 
 before_script:
-  - echo ${DEPLOY_DIR} , ${GIT_EMAIL}
   - cd ..
   - git clone https://gist.github.com/b73112ba396df4b6f1c0a9ac6c122ce5.git gist-deploy
   - cd $TRAVIS_BUILD_DIR
