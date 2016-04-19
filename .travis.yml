@@ -16,6 +16,7 @@ script:
   - hugo
 
 after_success:
+  - ls public/
   - bash ../gist-deploy/deploy_ghpages.sh
 
 env:
