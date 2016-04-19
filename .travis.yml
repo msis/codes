@@ -16,6 +16,7 @@ script:
   - hugo
 
 after_success:
+  - pwd
   - ls ${DEPLOY_DIR}
   - bash ../gist-deploy/deploy_ghpages.sh
 
