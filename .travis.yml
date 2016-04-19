@@ -1,9 +1,10 @@
-language: go
+language: c++
 
-go:
-  - 1.5
+sudo: required
 
-install: go get -v github.com/spf13/hugo
+before_install:
+  - wget https://github.com/spf13/hugo/releases/download/v0.15/hugo_0.15_amd64.deb
+  - sudo dpkg -i hugo_0.15_amd64.deb
 
 before_script:
   - cd ${TRAVIS_BUILD_DIR}/..
