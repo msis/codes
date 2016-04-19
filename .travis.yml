@@ -6,9 +6,9 @@ go:
 install: go get -v github.com/spf13/hugo
 
 before_script:
-  - cd ..
+  - cd ${TRAVIS_BUILD_DIR}/..
   - git clone https://gist.github.com/b73112ba396df4b6f1c0a9ac6c122ce5.git gist-deploy
-  - cd $TRAVIS_BUILD_DIR
+  - cd ${TRAVIS_BUILD_DIR}
   - hugo version
   - git clone --depth 1 --recursive https://github.com/spf13/hugoThemes.git themes
 
@@ -16,7 +16,7 @@ script:
   - hugo
 
 after_success:
-  - ls public/
+  - ls ${DEPLOY_DIR}
   - bash ../gist-deploy/deploy_ghpages.sh
 
 env:
