@@ -1,4 +1,4 @@
-baseurl = ""
+baseurl = "http:/msis.github.io/codes"
 languageCode = "en-us"
 title = "msis.codes()"
 theme = "base16"
