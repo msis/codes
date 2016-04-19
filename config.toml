@@ -2,3 +2,10 @@ baseurl = "http://msis.github.io/codes"
 languageCode = "en-us"
 title = "msis.codes()"
 theme = "base16"
+
+PygmentsCodeFences = true
+pygmentsuseclasses = true
+
+[params]
+  description = "MSIS example projects and tutorial for the masses."
+  author = "Mohamed Saad Ibn Seddik"
