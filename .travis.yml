@@ -1,4 +1,7 @@
-language: C++
+language: go
+
+go:
+  - 1.5
 
 install: go get -v github.com/spf13/hugo
 
