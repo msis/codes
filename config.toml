@@ -1,4 +1,6 @@
-baseurl = "http://msis.github.io/codes"
+baseurl = "http://msis.github.io/codes/"
+relativeURLs = true
+canonifyURLs = true
 languageCode = "en-us"
 title = "msis.codes()"
 theme = "base16"
