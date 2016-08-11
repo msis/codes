@@ -3,8 +3,8 @@ language: c++
 sudo: required
 
 before_install:
-  - wget https://github.com/spf13/hugo/releases/download/v0.15/hugo_0.15_amd64.deb
-  - sudo dpkg -i hugo_0.15_amd64.deb
+  - wget https://github.com/spf13/hugo/releases/download/v0.16/hugo_0.16-1_amd64.deb
+  - sudo dpkg -i hugo_0.16-1_amd64.deb
   - sudo apt-get -qq update
   - sudo apt-get install -y python-pygments
 
@@ -25,5 +25,5 @@ after_success:
 
 env:
   global:
-    - GIT_EMAIL: travis@example.com
+    - GIT_EMAIL: ms.ibnseddik@gmail.com
     - secure: eO4Qjj3if6if0/WQcsasizSJOz9ZPPkOSb2szmg2St8l/zSdKVGu6t4M/tZDGvigdQ0ovmdcL9Jujqq9MYyFisFKIYz8mEWMWmUlt1uy9BbFgp1kuG2qYExVNOIyyNcymeFqU2N7hKJLqf4/7XK/F/9JRHylk/26CJ0GVEDvgBlVFUKot5wKOF/KKBWsphSETcbeLxZ3NBk9eOrNK0HkyPcDC8TyAloyv8Cw+N4YlQTxwMqeea9JtYCB8lwXl8Uf50BzytfFh6hOojlk/z/fUikhbbLlKND1r12NEkgQaOswDMYG8FtcpO7xDh6h1h1oJUxbGiTGFqO8e8YuK8nMNJW5FnH/0Od6KdFrtyR02/KR0Dk1bRdzTb1TlYMEbrxwtfzp/eCHF3/E50+GLCNrOFJWuB2xrEe6kl8AYk1s+vRAIv+U+fv32Y7Ais3wylUt6K5rytoDyDoczHrs1kPQaiDLH5KrVN3MV94MlkkgjH06JG+ZxM69XdbQkbYAcr17WSIAcGa0qEqOPmzi/RsENX9rRA6Wt7GvB3fQcbowrCG8fMZIy3BuCVykykkar4QhRQwjKpaYL5Lpzmvdk3yGfREKAePtYawuX6vYuyg9GgJcd5W+Uj2xThfE7TJjS3OY8XkM6pB2TY7EkCkaaeiajpxUOVItSrynvemFonO2/hw=
